@@ -11,6 +11,7 @@ Principais referências de estudo:
  * http://hs.irythia.com/cards
  * https://www.udacity.com/course/viewer#!/c-ud853/l-1395568821/e-1395668594/m-1399748573
  * http://suelengc.com/2013/04/android-usando-o-poder-da-api-fragments/
+ * http://www.grokkingandroid.com/first-glance-androids-recyclerview/
  * 
 
 Link do repositório no gitHub // https://github.com/wallerone/AllCardsHearthstone
