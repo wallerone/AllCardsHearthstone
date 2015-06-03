@@ -1,7 +1,5 @@
 package com.example.wallace.allcardshearthstone;
 
-import android.app.ActionBar;
-import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -10,22 +8,24 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 
 
 public class MainActivity extends ActionBarActivity {
 
+    private android.support.v7.widget.Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        if (savedInstanceState == null) {
-            getFragmentManager().beginTransaction()
-                   .add(R.id.container, new PlaceholderFragment())
-                   .commit();
-        }
+
+        toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.app_bar);
+        setSupportActionBar(toolbar);
+
     }
+
 
 
     @Override
@@ -44,6 +44,7 @@ public class MainActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Toast.makeText(this,"Hey you just hit " + item.getTitle(),Toast.LENGTH_SHORT).show();
             return true;
         }
 
