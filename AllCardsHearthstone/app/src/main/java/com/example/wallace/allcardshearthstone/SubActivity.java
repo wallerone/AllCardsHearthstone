@@ -3,13 +3,18 @@ package com.example.wallace.allcardshearthstone;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toolbar;
 
 
 public class SubActivity extends ActionBarActivity {
 
+    private RecyclerView recyclerView;
     private android.support.v7.widget.Toolbar toolbar;
 
     @Override
@@ -23,6 +28,14 @@ public class SubActivity extends ActionBarActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
+//    @Override
+//    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceStarte){
+//
+//        View layout = inflater.inflate(R.layout.activity_sub, container, false);
+//        recyclerView = (RecyclerView) layout.findViewById(R.id.drawerlist);
+//        return layout;
+//    }
 
 
     @Override
@@ -49,4 +62,5 @@ public class SubActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }
