@@ -4,6 +4,7 @@
     <string name="action_settings">Settings</string>
     <string name="action_cards">All Cards</string>
     <string name="action_blizz">Battle.net</string>
+    <string name="action_lista_cartas">Listar Cards</string>
     <string name="title_activity_sub">SubActivity</string>
     <string name="title_activity_sub_activity_blizz">SubActivityBlizz</string>
 </resources>
