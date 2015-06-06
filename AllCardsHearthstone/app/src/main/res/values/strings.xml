@@ -7,4 +7,7 @@
     <string name="action_lista_cartas">Listar Cards</string>
     <string name="title_activity_sub">SubActivity</string>
     <string name="title_activity_sub_activity_blizz">SubActivityBlizz</string>
+    <string name="action_navigation_drawer">Hello!</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
 </resources>
