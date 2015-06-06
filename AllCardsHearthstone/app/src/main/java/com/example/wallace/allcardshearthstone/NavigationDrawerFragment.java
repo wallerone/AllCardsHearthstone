@@ -76,12 +76,26 @@ public class NavigationDrawerFragment extends Fragment {
                 super.onDrawerClosed(drawerView);
                 getActivity().invalidateOptionsMenu();
             }
+
+            // 0.0 = completamente fechado
+            // 1.0 = completamente aberto
+            @Override
+            public void onDrawerSlide(View drawerView, float slideOffset) {
+                super.onDrawerSlide(drawerView, slideOffset);
+            }
         };
         if(!mUserLearnedDrawer && !mFromSavedInstanceState){
             mDrawerLayout.openDrawer(containerView);
         }
 
         mDrawerLayout.setDrawerListener(mDrawerToggle);
+        //syncState
+        mDrawerLayout.post(new Runnable() {
+            @Override
+            public void run() {
+                mDrawerToggle.syncState();
+            }
+        });
 
     }
     public static void saveToPreferencer(Context context, String preferenceName, String preferenceValue){

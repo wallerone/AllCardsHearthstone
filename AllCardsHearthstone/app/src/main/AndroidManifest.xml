@@ -31,15 +31,6 @@
                 android:value="com.example.wallace.allcardshearthstone.MainActivity" />
         </activity>
 
-
-        <activity
-            android:name=".SubActivityBlizz"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.wallace.allcardshearthstone.SubActivityBlizz" />
-        </activity>
     </application>
 
 </manifest>

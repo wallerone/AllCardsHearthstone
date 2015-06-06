@@ -60,10 +60,6 @@ public class MainActivity extends ActionBarActivity {
             startActivity(new Intent(this, SubActivity.class));
         }
 
-        if (id == R.id.action_blizz) {
-            startActivity(new Intent(this, SubActivityBlizz.class));
-        }
-
         return super.onOptionsItemSelected(item);
     }
 }
