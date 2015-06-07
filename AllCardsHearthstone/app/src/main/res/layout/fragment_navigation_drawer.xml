@@ -3,8 +3,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#283593"
+    android:background="#000000"
     tools:context="com.example.wallace.allcardshearthstone.NavigationDrawerFragment">
 
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="61dp"
+        android:src="@drawable/login"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#212121"
+        android:text="login"
+        android:id="@+id/button"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <EditText
+        android:transitionName="@string/hello_world"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
 
 </RelativeLayout>

@@ -1,16 +1,23 @@
 package com.example.wallace.allcardshearthstone;
 
+import android.content.Context;
 import android.support.v4.app.NavUtils;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.AttributeSet;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 
 
 public class SubActivity extends ActionBarActivity {
+
+    private RecyclerView recycler;
 
     private RecyclerView recyclerView;
     private Toolbar toolbar;
@@ -36,6 +43,14 @@ public class SubActivity extends ActionBarActivity {
 //        return layout;
 //    }
 
+
+    //@Override
+   // public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saverdInstanceState) {
+
+   //     View layout = inflater.inflate(R.layout.activity_sub, container, false);
+   //     recyclerView = (RecyclerView) layout.findViewById(R.id.dramer_list);
+    //    return layout;
+//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
