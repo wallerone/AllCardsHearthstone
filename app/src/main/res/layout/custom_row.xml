@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/icon_cards"
+        android:padding="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="clip_vertical" />
+
+    <TextView
+        android:id="@+id/cards_name"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.31" />
+
+    <TextView
+        android:id="@+id/cards_cost"
+        android:padding="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.22" />
+
+    <TextView
+        android:id="@+id/cards_attack"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14" />
+
+    <TextView
+        android:layout_gravity="clip_vertical"
+        android:id="@+id/cards_health"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08" />
+    <TextView
+        android:layout_gravity="clip_vertical"
+        android:id="@+id/cards_rece"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10" />
+    <TextView
+        android:layout_gravity="clip_vertical"
+        android:id="@+id/cards_class"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06" />
+    <TextView
+        android:layout_gravity="clip_vertical"
+        android:id="@+id/cards_type"
+        android:padding="8dp"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
